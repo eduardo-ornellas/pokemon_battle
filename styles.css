@@ -1,0 +1,105 @@
+body {
+    background-color: #c3e8f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .battle-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f4c3;
+    border: 2px solid #e0d7a0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pokemon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .pokemon img {
+    width: 150px; /* Definimos um tamanho para as imagens dos Pokémon */
+    margin-bottom: 10px;
+  }
+  
+  .health-bar {
+    position: absolute;
+    top: -15px; /* Posiciona a barra de vida acima do Pokémon */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .health {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s;
+  }
+  
+  .moves {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .move {
+    background-color: #ff9800;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .move:hover {
+    background-color: #f57c00;
+  }
+  
+  .move:active {
+    background-color: #e65100;
+  }
+  
+  .hp-count {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Efeito de hover para os Pokémon */
+  .pokemon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efeito de hover para os botões de ataque */
+  .move:hover {
+    background-color: #f57c00;
+    transform: translateY(-2px);
+  }
+  
